@@ -36,6 +36,10 @@ MongoDB
 
 ## Design Patterns Used
 
+## Factory Pattern:
+
+The factory design pattern is an object-oriented design pattern that involves creating objects using a factory. A factory can be an object, class, or function that creates objects.
+
 ## Singleton Pattern:
 
 The Singleton pattern is a creational design pattern that ensures that a class has only one object and provides a global point of access to it. This pattern is often used in Spring Boot REST API projects to create singletons for database connections, object pools, and other resources that need to be shared across the application.
