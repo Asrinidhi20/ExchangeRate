@@ -70,17 +70,17 @@ http://localhost:8080/api/exchangeRate
 
   Method: GET
 
-  Description: Retrieve exchange rates for USD of a particular date.
+  Description: Retrieve exchange rates for USD of a specified date.
 
   Example Request: GET http://localhost:8080/api/exchangeRate/exchangeRateByDate/2023-02-05
 
-3. Create Exchange Rate:
+3. Create Exchange Rate
 
   Endpoint: /api/exchangeRate/create
 
   Method: POST
 
-  Description: Create exchange rates for required currency on a particular date.
+  Description: Create exchange rates for required currency on a specified date.
 
   Example Body: Provide the exchange rate as a JSON string in the request body.
   json
@@ -99,7 +99,7 @@ http://localhost:8080/api/exchangeRate
 
   Example Request: POST http://localhost:8080/api/exchangeRate/create
 
-4. Update Exchange Rate:
+4. Update Exchange Rate
 
   Endpoint: /api/exchangeRate/update/{id}
 
@@ -124,15 +124,25 @@ http://localhost:8080/api/exchangeRate
 
   Example: PUT http://localhost:8080/api/exchangeRate/update/2023-02-05
 
- 5. Delete Exchange Rate:
+ 5. Delete Exchange Rate
 
   Endpoint: /api/exchangeRate/delete/{id}
 
   Method: DELETE
 
-  Description: Deletes the of currencied on a particular date
+  Description: Deletes the exchange rates of the currency on a specified date
 
   Example: DELETE http://localhost:8080/api/exchangeRate/delete/2023-02-05
+
+  6. Get the latest exchange rates of USD  
+
+  Endpoint: /api/exchangeRate/latest-usd
+
+  Method: GET
+
+  Description: Retrieve the latest exchange rates based on USD
+
+  Example Request: GET http://localhost:8080/api/exchangeRate/latest-usd
 
   ## Database
   
